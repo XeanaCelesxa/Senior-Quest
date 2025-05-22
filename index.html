@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Senior Quest - Who Am I?</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #0f0f0f; color: #ffffff; padding: 2rem; }
+    .container { max-width: 700px; margin: 0 auto; }
+    h1 { color: #00ffae; }
+    .hint-button { background-color: #333; color: white; border: none; padding: 10px 20px; margin-top: 20px; cursor: pointer; border-radius: 5px; }
+    .hint-button:hover { background-color: #555; }
+    .secret { color: #0f0f0f; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🕵️‍♂️ Senior Quest: Who Am I?</h1>
+    <p>Welcome, junior! Your mission is to uncover the identity of your mysterious senior. Hidden within this website are clues. Find the <strong>flag</strong> that reveals who I am. Format: <code>flag{...}</code></p>
+
+    <h2>🔍 Room 1: Hidden Message</h2>
+    <p>Sometimes, secrets are not what they seem. Look carefully...</p>
+
+    <!-- Hidden Hint -->
+    <!-- Try checking the image file name. The flag may be near. -->
+
+    <h2>🖼️ Room 2: Image Puzzle</h2>
+    <p>Examine the image carefully. Maybe download it and inspect it further.</p>
+    <img src="flag_image.png" alt="Clue Image" style="width: 100%; max-width: 400px;">
+
+    <h2>🔐 Room 3: Cipher Code</h2>
+    <p>Decode this message using ROT13:</p>
+    <code>Guvf vf zl frperg yvxr gb gur anzr</code>
+
+    <h2>🗂️ Room 4: File Puzzle</h2>
+    <p>Download the file below. There’s a password required to open it. Maybe it’s somewhere on this page? 🤔</p>
+    <a href="mystery.zip" download>Download Mystery File</a>
+
+    <button class="hint-button" onclick="window.open('https://forms.gle/your_google_form_link_here', '_blank')">Request a Hint</button>
+
+    <p style="margin-top: 50px; font-size: 0.9em;">PS: Look closely at colors, shadows... even the invisible.</p>
+
+    <!-- Hidden Flag (Only visible if you highlight) -->
+    <p class="secret">flag{senior_mastermind}</p>
+  </div>
+</body>
+</html>
+
