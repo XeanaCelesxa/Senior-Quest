@@ -9,17 +9,23 @@
     h1 { color: #00ffae; }
     .hint-button { background-color: #333; color: white; border: none; padding: 10px 20px; margin-top: 20px; cursor: pointer; border-radius: 5px; }
     .hint-button:hover { background-color: #555; }
-    .secret { color: #0f0f0f; }
+    .secret { color: #0f0f0f; font-size: 0.1px; }
+    .mobile-tip { background: #1a1a1a; padding: 10px; border-left: 4px solid #00ffae; margin-top: 20px; }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>🕵️‍♂️ Senior Quest: Who Am I?</h1>
-    <p>Welcome, junior! Your mission is to uncover the identity of your mysterious senior. Hidden within this website are clues. Find the <strong>flag</strong> that reveals who I am. Format: <code>flag{...} When you find them DM me the Flag</code></p>
+    <p>Welcome, junior! Your mission is to uncover the identity of your mysterious senior. Hidden within this website are clues. Find the <strong>flag</strong> that reveals who I am. Format: <code>flag{...}</code></p>
 
     <h2>🔍 Room 1: Hidden Message</h2>
     <p>Sometimes, secrets are not what they seem. Look carefully...</p>
-    <!-- flag{VERYGOODLETSTART}-->
+    <p class="secret"><!-- flag{VERYGOODLETSTART} --></p>
+
+    <div class="mobile-tip">
+      <strong>Tip for Mobile Users:</strong><br>
+      If you're on a phone and can't view source code, try going to <a href="https://www.view-page-source.com" style="color:#00ffae;" target="_blank">view-page-source.com</a> and paste this page's URL to see hidden clues!
+    </div>
 
     <h2>🖼️ Room 2: Image Puzzle</h2>
     <p>Examine the image carefully. Maybe download it and inspect it further.</p>
@@ -37,9 +43,7 @@
 
     <p style="margin-top: 50px; font-size: 0.9em;">PS: Look closely at colors, shadows... even the invisible.</p>
 
-    <!-- Hidden Flag (Only visible if you highlight) -->
     <p class="secret">flag{senior_mastermind}</p>
   </div>
 </body>
 </html>
-
